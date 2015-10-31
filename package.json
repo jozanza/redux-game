@@ -1,0 +1,34 @@
+{
+  "name": "redux-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/browserify src/index.js -o index.js -t [ babelify --stage 0 ]",
+    "watch": "node_modules/.bin/watchify src/index.js -o index.js -t [ babelify --stage 0 ]"
+  },
+  "author": "Josiah Savary <hello@jsavary.com> (http://jsavary.com)",
+  "license": "ISC",
+  "dependencies": {
+    "immutable": "^3.7.5",
+    "powerglove": "^0.7.0",
+    "printarray": "^0.1.4",
+    "ramda": "^0.18.0",
+    "react": "^0.14.0",
+    "react-classy": "^0.4.5",
+    "react-dom": "^0.14.0",
+    "redux": "^3.0.3",
+    "rx": "^4.0.6"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-runtime": "^5.8.25",
+    "babelify": "^6.4.0",
+    "eslint": "^1.7.2",
+    "flow-bin": "^0.17.0",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3",
+    "watchify": "^3.4.0"
+  }
+}
